@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(49, 49, 143);
+}
+
+.gostoza {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gostoza img {
+    border-radius: 5px;
+    border: solid rgb(255, 0, 140) 5px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.botao {
+    width: 150px;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px;
+    border: solid rgb(255, 0, 0) 
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.videos {
+    max-height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho img {
+    width: 300px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.rodape .direitos {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 710px) {
+    .gostoza img {
+        width: 450px;
+        border-radius: 5px;
+        border: solid rgb(255, 0, 140) 5px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .rodape {
+        height: 160px;
+        justify-content: end;
+    }
+}
+
+@media (max-width: 360px) {
+    .gostoza img {
+        min-width: 130px;
+        border-radius: 5px;
+        border: solid rgb(255, 0, 140) 5px;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .botao {
+        width: 70px;
+        font-size: 8px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .videos video {
+       min-width: 100px;
+    }
+
+    .cabecalho img {
+        width: 100px;
+    }
+
+    .rodape {
+        height: 300px;
+        justify-content: end;
+    }   
+
+    .rodape .direitos {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 595px) {
+    .videos video {
+        width: 400px;
+    }
+}
+
+@media (max-width: 970px) {
+    .botoes {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
